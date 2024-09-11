@@ -1,19 +1,23 @@
 import Solo from "./Header-Img/Solo.png";
 import Burger from "./Header-Img/Burger.png";
 
-
 import "./Header.scss";
+import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <>
       <div className="Header-Wrapper">
         <div className="Header-Inner">
           <div className="Header-Logo-Solo">
-            <img className="Solo" src={Solo} />
+            <Link to={"/"}>
+              <img className="Solo" src={Solo} />
+            </Link>
           </div>
           <div className="Header-Name">
             <div className="Header-Img">
-              <img className="Img" src={Burger} />
+              <Link to={"/"}>
+                <img className="Img" src={Burger} />
+              </Link>
             </div>
             <div className="Header-Texts">
               <div className="Header-Text">Только самые</div>

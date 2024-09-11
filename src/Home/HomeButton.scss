@@ -1,0 +1,41 @@
+.Buttons {
+  display: flex;
+  gap: 16px;
+  .Button {
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: white;
+    padding: 6px 8px;
+    align-items: center;
+    transition: background-color 2s ease;
+    &:hover {
+      background-color: rgba(255, 171, 8, 1);
+    }
+    .Button-img {
+      text-align: center;
+    }
+    .Button-Name {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.82px;
+      text-align: left;
+    }
+  }
+  .Button-Names {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    text-align: center;
+    padding: 8px 10px;
+    transition: background-color 2s ease;
+    border-radius: 50px;
+    background-color: white;
+
+    &:hover {
+      background-color: rgba(255, 171, 8, 1);
+    }
+  }
+}
