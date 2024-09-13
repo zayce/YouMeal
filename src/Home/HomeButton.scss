@@ -1,6 +1,8 @@
 .Buttons {
   display: flex;
   gap: 16px;
+  align-items: center;
+  justify-content: center;
   .Button {
     display: flex;
     gap: 10px;
@@ -9,6 +11,7 @@
     padding: 6px 8px;
     align-items: center;
     transition: background-color 2s ease;
+    box-shadow: 2px 2px 8px rgba(0.1, 0.1, 0.1, 0.5);
     &:hover {
       background-color: rgba(255, 171, 8, 1);
     }
@@ -33,7 +36,7 @@
     transition: background-color 2s ease;
     border-radius: 50px;
     background-color: white;
-
+    box-shadow: 2px 2px 8px rgba(0.1, 0.1, 0.1, 0.5);
     &:hover {
       background-color: rgba(255, 171, 8, 1);
     }

@@ -1,0 +1,59 @@
+.Productss-Row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  .Productss-Object {
+    padding: 12px;
+    background-color: white;
+    border-radius: 18px;
+    .Products-img {
+      margin-bottom: 16px;
+      img {
+        width: 276px;
+        height: 225px;
+      }
+    }
+    .Price {
+      font-family: Nunito;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .Name {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.8px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .Gram {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20.8px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .Span-Button {
+      border: none;
+      padding: 12px 102px;
+      border-radius: 12px;
+      background-color: rgba(242, 242, 243, 1);
+      transition: background-color 2s ease;
+      box-shadow: 2px 2px 8px rgba(0.1, 0.1, 0.1, 0.5);
+      &:hover {
+        background-color: rgba(255, 171, 8, 1);
+      }
+      .button {
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+      }
+    }
+  }
+}

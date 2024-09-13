@@ -1,0 +1,157 @@
+.Home-Busket-Wrapper {
+  background-color: white;
+  border-radius: 18px;
+  padding: 24px 16px;
+  .Home-Busket-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(242, 242, 243, 1);
+    .Title {
+      font-family: Nunito;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: left;
+    }
+    .Busket-elements {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .Busket-Count {
+        border-radius: 6px;
+        background-color: rgba(242, 242, 243, 1);
+        padding: 4px 16px;
+      }
+    }
+  }
+  .Home-Busket-Product {
+    display: flex;
+    padding: 16px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(242, 242, 243, 1);
+    .Busket-Product-Desc {
+      display: flex;
+      gap: 6px;
+      .Busket-desc-photo {
+        .photo {
+          width: 64px;
+          height: 100%;
+          top: 16px;
+          gap: 0px;
+          border-radius: 8px;
+        }
+      }
+      .Busket-Desc {
+        .Busket-Name {
+          font-family: Nunito;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16.37px;
+          text-align: left;
+        }
+        .Busket-Gram {
+          font-family: Nunito;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16.37px;
+          text-align: left;
+          color: rgba(177, 177, 177, 1);
+          margin-bottom: 8px;
+        }
+        .Busket-Price {
+          font-family: Nunito;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16.37px;
+          text-align: left;
+        }
+      }
+    }
+    .Counter {
+      display: flex;
+      align-items: center;
+      padding: 9px 12px;
+      background-color: rgba(242, 242, 243, 1);
+      gap: 12px;
+      border-radius: 12px;
+      .Dec {
+        border: none;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.82px;
+        text-align: left;
+        background-color: none;
+      }
+      .Count {
+        border: none;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.82px;
+        text-align: left;
+      }
+      .inc {
+        border: none;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.82px;
+        text-align: left;
+        background-color: none;
+      }
+    }
+  }
+  .Home-Busket-Total-Price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .Busket-Total {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.8px;
+      text-align: left;
+    }
+    .Busket-Price {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.8px;
+      text-align: right;
+    }
+  }
+  .Busket-Button {
+    margin: 7px;
+    padding: 12px 72px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(255, 112, 32, 1);
+    text-align: center;
+    gap: 10px;
+    .Button {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      color: white;
+    }
+  }
+  .Home-Busket-Delivery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 12px;
+    .Delivery-title {
+      font-family: Nunito;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.37px;
+      text-align: left;
+    }
+  }
+}

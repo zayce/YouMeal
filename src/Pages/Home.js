@@ -1,4 +1,5 @@
 import { HomeButton } from "../Home/HomeButton";
+import { HomeProduct } from "../Home/HomeProducts";
 import "./Home.scss";
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
       <div className="Home-Wrapper">
         <div className="Home-Inner">
           <HomeButton />
+          <HomeProduct />
         </div>
       </div>
     </>
