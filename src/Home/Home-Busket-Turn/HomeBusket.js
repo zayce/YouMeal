@@ -2,8 +2,10 @@ import "./HomeBusket.scss";
 import Delivery from "./delivery.svg";
 import Burger from "../../asests/MeatBurger.png";
 import Logo from "./cart 3.svg";
+import { useMyContext } from "../../UseContext";
 
 export const HomeBusket = () => {
+  const { cart } = useMyContext();
   return (
     <>
       <div className="Home-Busket-Wrapper">
@@ -16,44 +18,25 @@ export const HomeBusket = () => {
             <div className="Busket-Count">1</div>
           </div>
         </div>
-        <div className="Home-Busket-Product">
-          <div className="Busket-Product-Desc">
-            <div className="Busket-desc-photo">
-              <img className="photo" src={Burger} />
+        {cart.map((element) => (
+          <div className="Home-Busket-Product">
+            <div className="Busket-Product-Desc">
+              <div className="Busket-desc-photo">
+                <img className="photo" src={element.img} />
+              </div>
+              <div className="Busket-Desc">
+                <div className="Busket-Name">{element.name}</div>
+                <div className="Busket-Gram">{element.Gram}</div>
+                <div className="Busket-Price">{element.price}</div>
+              </div>
             </div>
-            <div className="Busket-Desc">
-              <div className="Busket-Name">Супер сырный</div>
-              <div className="Busket-Gram">180г</div>
-              <div className="Busket-Price">550₽</div>
-            </div>
-          </div>
-          <div className="Counter">
-            <button className="Dec">-</button>
-            <span className="Count">1</span>
-            <button className="inc">+</button>
-          </div>
-        </div>
-        <div className="Home-Busket-Product">
-          <div className="Busket-Product-Desc">
-            <div className="Busket-desc-photo">
-              <img className="photo" src={Burger} />
-            </div>
-            <div className="Busket-Desc">
-              <div className="Busket-Name">Супер сырный</div>
-              <div className="Busket-Gram">180г</div>
-              <div className="Busket-Price">550₽</div>
+            <div className="Counter">
+              <button className="Dec">-</button>
+              <span className="Count">1</span>
+              <button className="inc">+</button>
             </div>
           </div>
-          <div className="Counter">
-            <button className="Dec">-</button>
-            <span className="Count">1</span>
-            <button className="inc">+</button>
-          </div>
-        </div>
-        <div className="Home-Busket-Total-Price">
-          <div className="Busket-Total">Итого</div>
-          <div className="Busket-Price">1234₽</div>
-        </div>
+        ))}
         <button className="Busket-Button">
           <span className="Button">Оформить заказ</span>
         </button>

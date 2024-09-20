@@ -1,11 +1,13 @@
 .Productss-Row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   .Productss-Object {
-    padding: 12px;
+    padding: 14px;
     background-color: white;
     border-radius: 18px;
+
     .Products-img {
       margin-bottom: 16px;
       img {

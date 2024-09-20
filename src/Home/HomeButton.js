@@ -9,13 +9,15 @@ import Desert from "./Button-img/desert.svg";
 import ket from "./Button-img/ketchup.svg";
 
 import "./HomeButton.scss";
+import { useMyContext } from "../UseContext";
 
 export const HomeButton = () => {
+  const { filteresByCategori } = useMyContext();
   const massivButton = [
     { img: Burger, name: "Бургеры" },
-    { img: zak, name: "Закуски " },
+    { img: zak, name: "Закуски" },
     { img: Hot, name: "Хот-доги" },
-    { img: Combo, name: "Комбо" },
+    { img: Combo, name: "Комбо-меню" },
     { img: Shaverma, name: "Шаурма" },
     { img: Pizza, name: "Пицца" },
     { img: Vok, name: "Вок" },
@@ -25,14 +27,17 @@ export const HomeButton = () => {
   return (
     <>
       <div className="Buttons">
-        <div className="Button-Names">Все</div>
-        {massivButton.map((button, index) => (
-          <div key={index} className="Button">
+        {massivButton.map((button) => (
+          <button
+            key={button.name}
+            className="Button"
+            onClick={() => filteresByCategori(button.name)}
+          >
             <div className="Button-img">
-              <img className="img" src={button.img} />
+              <img className="img" src={button.img} alt={button.name} />
             </div>
             <div className="Button-Name">{button.name}</div>
-          </div>
+          </button>
         ))}
       </div>
     </>

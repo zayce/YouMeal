@@ -16,7 +16,7 @@ import sir from "./asests/SIRNYE.png";
 const MyContext = createContext();
 
 export const MyProvider = ({ children }) => {
-  const MenuMassiv = [
+  const [MenuMassiv, setMenuMassiv] = useState([
     {
       id: 1,
       quantity: 1,
@@ -783,9 +783,45 @@ export const MyProvider = ({ children }) => {
       PrIncludes3: "Соль",
       PrIncludes4: "Специи",
     },
-  ];
+  ]);
+  const [selectedCategory, setSelectedCategory] = useState("Все");
+
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find((item) => item.id === product.id);
+
+      if (existingProduct) {
+        return prevCart.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
+  };
+
+  const filteresByCategori = (category) => {
+    setSelectedCategory(category);
+  };
   return (
-    <MyContext.Provider value={{ MenuMassiv }}>{children}</MyContext.Provider>
+    <MyContext.Provider
+      value={{
+        MenuMassiv,
+        setMenuMassiv,
+        selectedCategory,
+        setSelectedCategory,
+        filteresByCategori,
+        cart,
+        setCart,
+        addToCart,
+      }}
+    >
+      {children}
+    </MyContext.Provider>
   );
 };
 
