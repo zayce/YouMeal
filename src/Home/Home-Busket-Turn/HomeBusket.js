@@ -5,7 +5,8 @@ import Logo from "./cart 3.svg";
 import { useMyContext } from "../../UseContext";
 
 export const HomeBusket = () => {
-  const { cart } = useMyContext();
+  const { cart, decFromCart, totalQuantity, addToCart, totalPrice } =
+    useMyContext();
   return (
     <>
       <div className="Home-Busket-Wrapper">
@@ -15,7 +16,7 @@ export const HomeBusket = () => {
             <div className="Busket-Logo">
               <img className="Busket" src={Logo} />
             </div>
-            <div className="Busket-Count">1</div>
+            <div className="Busket-Count">{totalQuantity}</div>
           </div>
         </div>
         {cart.map((element) => (
@@ -26,14 +27,18 @@ export const HomeBusket = () => {
               </div>
               <div className="Busket-Desc">
                 <div className="Busket-Name">{element.name}</div>
-                <div className="Busket-Gram">{element.Gram}</div>
-                <div className="Busket-Price">{element.price}</div>
+                <div className="Busket-Gram">{element.price}</div>
+                <div className="Busket-Price">{totalPrice}₽</div>
               </div>
             </div>
             <div className="Counter">
-              <button className="Dec">-</button>
-              <span className="Count">1</span>
-              <button className="inc">+</button>
+              <button className="Dec" onClick={() => decFromCart(element.id)}>
+                -
+              </button>
+              <span className="Count">{totalQuantity}</span>
+              <button className="inc" onClick={() => addToCart(element)}>
+                +
+              </button>
             </div>
           </div>
         ))}

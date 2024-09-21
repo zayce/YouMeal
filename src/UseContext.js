@@ -804,6 +804,28 @@ export const MyProvider = ({ children }) => {
     });
   };
 
+  const decFromCart = (productId) => {
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find((item) => item.id === productId);
+
+      if (existingProduct.quantity > 1) {
+        return prevCart.map((item) =>
+          item.id === productId
+            ? { ...item, quantity: item.quantity - 1 }
+            : item
+        );
+      } else {
+        return prevCart.filter((item) => item.id !== productId);
+      }
+    });
+  };
+
+  const totalQuantity = cart.reduce((count, item) => count + item.quantity, 0);
+  const totalPrice = cart.reduce(
+    (count, item) => count + parseInt(item.price) * item.quantity,
+    0
+  );
+
   const filteresByCategori = (category) => {
     setSelectedCategory(category);
   };
@@ -818,6 +840,9 @@ export const MyProvider = ({ children }) => {
         cart,
         setCart,
         addToCart,
+        decFromCart,
+        totalQuantity,
+        totalPrice,
       }}
     >
       {children}
