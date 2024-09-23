@@ -4,6 +4,7 @@ import Burger from "../../asests/MeatBurger.png";
 import Logo from "./cart 3.svg";
 import { useMyContext } from "../../UseContext";
 import { useState } from "react";
+import { Modal } from "./Modal";
 
 export const HomeBusket = () => {
   const { cart, decFromCart, totalQuantity, addToCart, totalPrice } =
