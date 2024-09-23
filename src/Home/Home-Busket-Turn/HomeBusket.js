@@ -28,28 +28,29 @@ export const HomeBusket = () => {
           </div>
         </div>
         {cart.map((element) => (
-          <div className="Home-Busket-Product">
+          <div className="Home-Busket-Product" key={element.id}>
             <div className="Busket-Product-Desc">
               <div className="Busket-desc-photo">
-                <img className="photo" src={element.img} />
+                <img className="photo" src={element.img} alt={element.name} />
               </div>
               <div className="Busket-Desc">
                 <div className="Busket-Name">{element.name}</div>
-                <div className="Busket-Gram">{element.price}</div>
-                <div className="Busket-Price">{totalPrice}₽</div>
+                <div className="Busket-Gram">{element.price}₽</div>
+                <div className="Busket-Price">{element.price}</div>
               </div>
             </div>
             <div className="Counter">
               <button className="Dec" onClick={() => decFromCart(element.id)}>
                 -
               </button>
-              <span className="Count">{totalQuantity}</span>
+              <span className="Count">{element.quantity}</span>
               <button className="inc" onClick={() => addToCart(element)}>
                 +
               </button>
             </div>
           </div>
         ))}
+
         <button className="Busket-Button" onClick={toggleModal}>
           <span className="Button">Оформить заказ</span>
 
