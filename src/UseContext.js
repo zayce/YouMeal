@@ -13,6 +13,39 @@ import Onion from "./asests/Onion.png";
 import Nagets from "./asests/Naggets.png";
 import sir from "./asests/SIRNYE.png";
 
+import BusketHot from "./asests/BusketHot.jpg";
+import Cripsy from "./asests/Cripsy.jpg";
+import Classik from "./asests/Klassik.jpg";
+import Combo from "./asests/Combo.jpg";
+import Combik from "./asests/Combik.png";
+import Meksikan from "./asests/Meksikan.jpg";
+
+import Margita from "./asests/margarita.png";
+import Pendir from "./asests/4pendir.png";
+import BBQ from "./asests/BBQ.png";
+import Peperoni from "./asests/Peperoni.png";
+import Vegan from "./asests/Vegan.png";
+import Fish from "./asests/Fish.png";
+
+import ShaDoner from "./asests/ShaDoner.png";
+import VeganSha from "./asests/VeganSha.png";
+import AciDoner from "./asests/AciDoner.png";
+import ClassikCha from "./asests/ClassicSha.png";
+import ChikenSha from "./asests/ChikenSha.png";
+import BBQSHA from "./asests/BBQSha.png";
+
+import AnanasD from "./asests/AnanasD.png";
+import ChisD from "./asests/ChisD.png";
+import Darchin from "./asests/DArcin.png";
+import DeP from "./asests/DesertP.png";
+import Marcan from "./asests/MercanburaD.png";
+import Chocolate from "./asests/Chocolate.png";
+
+import Ketcup from "./asests/Ketchup.png";
+import May from "./asests/May.png";
+import Pendirs from "./asests/Pendir.png";
+import bbqs from "./asests/bbqs.png";
+
 const MyContext = createContext();
 
 export const MyProvider = ({ children }) => {
@@ -278,20 +311,20 @@ export const MyProvider = ({ children }) => {
     {
       id: 19,
       quantity: 1,
-      img: "ComboClassic",
+      img: Classik,
       name: "Классическое комбо",
       category: "Комбо-меню",
       price: "799₽",
       Gram: "600г",
-      desc: "Классическое комбо: бургер, картошка фри и напиток. Идеально для сытного обеда или ужина.",
-      PrIncludes1: "Бургер с котлетой из говядины",
-      PrIncludes2: "Картошка фри",
+      desc: "Классическое комбо: 9 острых крылышек, 9 оригинальных стрипсов, 9 оригинальных голеней, 3 маленьких картофеля фри",
+      PrIncludes1: "9 острых крылышек",
+      PrIncludes2: " 9 оригинальных стрипсов",
       PrIncludes3: "Напиток (на выбор: кола, спрайт, фанта)",
     },
     {
       id: 20,
       quantity: 1,
-      img: "ComboCheese",
+      img: Combo,
       name: "Комбо с сыром",
       category: "Комбо-меню",
       price: "899₽",
@@ -304,7 +337,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 21,
       quantity: 1,
-      img: "ComboSpicy",
+      img: BusketHot,
       name: "Острое комбо",
       category: "Комбо-меню",
       price: "849₽",
@@ -317,20 +350,20 @@ export const MyProvider = ({ children }) => {
     {
       id: 22,
       quantity: 1,
-      img: "ComboVeggie",
-      name: "Вегетарианское комбо",
+      img: Cripsy,
+      name: "BUCKET DUET SPICY",
       category: "Комбо-меню",
       price: "869₽",
       Gram: "650г",
-      desc: "Вегетарианское комбо: вегги-бургер, весенние рулеты и напиток. Легкий и полезный выбор.",
-      PrIncludes1: "Вегги-бургер",
-      PrIncludes2: "Весенние рулеты",
-      PrIncludes3: "Напиток (на выбор: кола, спрайт, фанта)",
+      desc: "BUCKET DUET SPICY: 2 spicy drumsticks+4 hot&spicy chicken wings+4 spicy strips+1 medium french fries.",
+      PrIncludes1: "2 spicy drumsticks",
+      PrIncludes2: "4 spicy strips",
+      PrIncludes3: "1 medium french fries",
     },
     {
       id: 23,
       quantity: 1,
-      img: "ComboMexican",
+      img: Meksikan,
       name: "Мексиканское комбо",
       category: "Комбо-меню",
       price: "929₽",
@@ -343,7 +376,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 24,
       quantity: 1,
-      img: "ComboBBQ",
+      img: Combik,
       name: "BBQ комбо",
       category: "Комбо-меню",
       price: "919₽",
@@ -356,7 +389,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 25,
       quantity: 1,
-      img: "ClassicShawarma",
+      img: ClassikCha,
       name: "Классическая шаурма",
       category: "Шаурма",
       price: "299₽",
@@ -372,7 +405,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 26,
       quantity: 1,
-      img: "BeefShawarma",
+      img: ShaDoner,
       name: "Шаурма с говядиной",
       category: "Шаурма",
       price: "349₽",
@@ -388,7 +421,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 27,
       quantity: 1,
-      img: "VeggieShawarma",
+      img: VeganSha,
       name: "Вегетарианская шаурма",
       category: "Шаурма",
       price: "319₽",
@@ -404,7 +437,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 28,
       quantity: 1,
-      img: "SpicyShawarma",
+      img: AciDoner,
       name: "Острая шаурма",
       category: "Шаурма",
       price: "339₽",
@@ -420,7 +453,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 29,
       quantity: 1,
-      img: "BBQShawarma",
+      img: BBQSHA,
       name: "Шаурма BBQ",
       category: "Шаурма",
       price: "359₽",
@@ -436,7 +469,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 30,
       quantity: 1,
-      img: "ChickenShawarmaWrap",
+      img: ChikenSha,
       name: "Шаурма-ролл с курицей",
       category: "Шаурма",
       price: "329₽",
@@ -452,7 +485,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 31,
       quantity: 1,
-      img: "MargheritaPizza",
+      img: Margita,
       name: "Пицца Маргарита",
       category: "Пицца",
       price: "499₽",
@@ -466,7 +499,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 32,
       quantity: 1,
-      img: "PepperoniPizza",
+      img: Peperoni,
       name: "Пицца Пепперони",
       category: "Пицца",
       price: "549₽",
@@ -480,7 +513,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 33,
       quantity: 1,
-      img: "VegetarianPizza",
+      img: Vegan,
       name: "Вегетарианская пицца",
       category: "Пицца",
       price: "529₽",
@@ -494,7 +527,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 34,
       quantity: 1,
-      img: "BBQChickenPizza",
+      img: BBQ,
       name: "Пицца с курицей BBQ",
       category: "Пицца",
       price: "569₽",
@@ -510,7 +543,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 35,
       quantity: 1,
-      img: "SeafoodPizza",
+      img: Fish,
       name: "Пицца с морепродуктами",
       category: "Пицца",
       price: "599₽",
@@ -524,7 +557,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 36,
       quantity: 1,
-      img: "FourCheesePizza",
+      img: Pendir,
       name: "Пицца 4 сыра",
       category: "Пицца",
       price: "579₽",
@@ -623,7 +656,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 43,
       quantity: 1,
-      img: "ChocolateCake",
+      img: Chocolate,
       name: "Шоколадный торт",
       category: "Десерты",
       price: "349₽",
@@ -636,7 +669,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 44,
       quantity: 1,
-      img: "Cheesecake",
+      img: ChisD,
       name: "Чизкейк",
       category: "Десерты",
       price: "379₽",
@@ -649,7 +682,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 45,
       quantity: 1,
-      img: "Tiramisu",
+      img: Marcan,
       name: "Тирамису",
       category: "Десерты",
       price: "389₽",
@@ -662,7 +695,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 46,
       quantity: 1,
-      img: "FruitSalad",
+      img: AnanasD,
       name: "Фруктовый салат",
       category: "Десерты",
       price: "299₽",
@@ -675,7 +708,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 47,
       quantity: 1,
-      img: "LemonMeringuePie",
+      img: DeP,
       name: "Лимонный пирог с меренгой",
       category: "Десерты",
       price: "359₽",
@@ -688,7 +721,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 48,
       quantity: 1,
-      img: "IceCreamSundae",
+      img: Darchin,
       name: "Мороженое Sundae",
       category: "Десерты",
       price: "329₽",
@@ -702,7 +735,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 49,
       quantity: 1,
-      img: "Ketchup",
+      img: Ketcup,
       name: "Кетчуп",
       category: "Соусы",
       price: "99₽",
@@ -716,7 +749,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 50,
       quantity: 1,
-      img: "Mayonnaise",
+      img: May,
       name: "Майонез",
       category: "Соусы",
       price: "109₽",
@@ -730,7 +763,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 51,
       quantity: 1,
-      img: "BarbecueSauce",
+      img: bbqs,
       name: "BBQ соус",
       category: "Соусы",
       price: "119₽",
@@ -744,7 +777,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 52,
       quantity: 1,
-      img: "GarlicSauce",
+      img: May,
       name: "Чесночный соус",
       category: "Соусы",
       price: "119₽",
@@ -758,7 +791,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 53,
       quantity: 1,
-      img: "SoySauce",
+      img: bbqs,
       name: "Соевый соус",
       category: "Соусы",
       price: "109₽",
@@ -772,7 +805,7 @@ export const MyProvider = ({ children }) => {
     {
       id: 54,
       quantity: 1,
-      img: "HotSauce",
+      img: Pendirs,
       name: "Острый соус",
       category: "Соусы",
       price: "119₽",

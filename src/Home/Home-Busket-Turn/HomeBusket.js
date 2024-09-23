@@ -3,10 +3,17 @@ import Delivery from "./delivery.svg";
 import Burger from "../../asests/MeatBurger.png";
 import Logo from "./cart 3.svg";
 import { useMyContext } from "../../UseContext";
+import { useState } from "react";
 
 export const HomeBusket = () => {
   const { cart, decFromCart, totalQuantity, addToCart, totalPrice } =
     useMyContext();
+
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
   return (
     <>
       <div className="Home-Busket-Wrapper">
@@ -42,8 +49,10 @@ export const HomeBusket = () => {
             </div>
           </div>
         ))}
-        <button className="Busket-Button">
+        <button className="Busket-Button" onClick={toggleModal}>
           <span className="Button">Оформить заказ</span>
+
+          {modal && <Modal onClose={toggleModal} />}
         </button>
         <div className="Home-Busket-Delivery">
           <div className="Delivery-logo">
